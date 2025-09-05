@@ -19,6 +19,7 @@ bibliography: paper.bib
 
 The Newfoundland & Labrador Geriatric Health Index (NLGHI) converts the traditionally narrative Comprehensive Geriatric Assessment (CGA) into a quantitative, longitudinal measure aligned with the World Health Organization’s (WHO) holistic definition of health. The software provides a PyQt5 desktop interface for entering per-domain impairment ratings (fixed 0–5 scale), automatically computing domain-specific aggregate values (DSAVs = rating × domain weight) and an overall Geriatric Health Index (GHI = ΣDSAV/27). Built-in charts visualize GHI trajectories and DSAV heatmaps across visits; a patient workspace supports clinical notes, history, symptom snapshots, follow-ups, attachments, and reports. The design preserves clinical nuance while enabling early signal detection, standardized comparison across services, and reproducible analytics for clinical and public health research.
 
+# Statement of need
 Geriatric and community clinics and research centres that focus on geriatric health often capture structured impairment severity across multiple domains and need a transparent, "scriptable" tool—rather than a GUI‑only app—to compute a consistent composite index and integrate it into automated workflows. NLGHI Core provides a small, dependency‑light library with tests and examples to meet this need. By shipping as a Python library that depends on the scientific Python ecosystem [@Harris2020; @McKinney2010], the index can be embedded into notebooks and pipelines.
 
 # Functionality
