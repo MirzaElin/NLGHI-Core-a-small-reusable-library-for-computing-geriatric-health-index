@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: NLGHI Core: 27-domain geriatric health index
+version: 1.0.0
+authors:
+  - family-names: Elin
+    given-names: Mirza Niaz Zaman
+date-released: 2025-09-05
+license: MIT
