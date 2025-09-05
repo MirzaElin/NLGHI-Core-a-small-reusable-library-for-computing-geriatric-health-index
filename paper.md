@@ -81,7 +81,7 @@ i
 
 # Statement of need
 
-Geriatric and community clinics often capture structured impairment severity across multiple domains and need a transparent, "scriptable" tool—rather than a GUI‑only app—to compute a consistent composite index and integrate it into automated workflows. NLGHI Core provides a small, dependency‑light library with tests and examples to meet this need. By shipping as a Python library that depends on the scientific Python ecosystem [@Harris2020; @McKinney2010], the index can be embedded into notebooks and pipelines.
+Geriatric and community clinics and research centres that focus on geriatric health often capture structured impairment severity across multiple domains and need a transparent, "scriptable" tool—rather than a GUI‑only app—to compute a consistent composite index and integrate it into automated workflows. NLGHI Core provides a small, dependency‑light library with tests and examples to meet this need. By shipping as a Python library that depends on the scientific Python ecosystem [@Harris2020; @McKinney2010], the index can be embedded into notebooks and pipelines.
 
 # Functionality
 
