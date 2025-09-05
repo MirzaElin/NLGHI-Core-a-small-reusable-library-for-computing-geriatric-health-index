@@ -17,69 +17,8 @@ bibliography: paper.bib
 
 # Summary
 
-NLGHI Core is a small, reusable Python library—with a companion command-line interface—for computing the Newfoundland & Labrador Geriatric Health Index (NLGHI) from structured clinical inputs. The package takes a 27-item vector of domain impairment scores (each in 
-[
-0
-,
-5
-]
-[0,5]) and a matching weight vector, computes domain contributions 
-D
-S
-A
-V
-𝑖
-=
-𝑥
-𝑖
-𝑤
-𝑖
-DSAV
-i
-	​
+The Newfoundland & Labrador Geriatric Health Index (NLGHI) converts the traditionally narrative Comprehensive Geriatric Assessment (CGA) into a quantitative, longitudinal measure aligned with the World Health Organization’s (WHO) holistic definition of health. The software provides a PyQt5 desktop interface for entering per-domain impairment ratings (fixed 0–5 scale), automatically computing domain-specific aggregate values (DSAVs = rating × domain weight) and an overall Geriatric Health Index (GHI = ΣDSAV/27). Built-in charts visualize GHI trajectories and DSAV heatmaps across visits; a patient workspace supports clinical notes, history, symptom snapshots, follow-ups, attachments, and reports. The design preserves clinical nuance while enabling early signal detection, standardized comparison across services, and reproducible analytics for clinical and public health research [@palmer2018cga; @um2022cga].
 
-=x
-i
-	​
-
-w
-i
-	​
-
-, and returns the overall index 
-G
-H
-I
-=
-1
-27
-∑
-𝑖
-=
-1
-27
-D
-S
-A
-V
-𝑖
-GHI=
-27
-1
-	​
-
-∑
-i=1
-27
-	​
-
-DSAV
-i
-	​
-
-. To support transparent, reproducible research, the computation is delivered as an importable library (no GUI), with a simple CLI for batch use, examples for quick trials, and lightweight utilities to write/read patient-level time series as JSON. The implementation is dependency-light (NumPy/pandas), packaged under an OSI-approved license, and includes unit tests and GitHub Actions CI to encourage reliability, sustainability, and reuse in notebooks and pipelines.
-
-# Statement of need
 
 Geriatric and community clinics and research centres that focus on geriatric health often capture structured impairment severity across multiple domains and need a transparent, "scriptable" tool—rather than a GUI‑only app—to compute a consistent composite index and integrate it into automated workflows. NLGHI Core provides a small, dependency‑light library with tests and examples to meet this need. By shipping as a Python library that depends on the scientific Python ecosystem [@Harris2020; @McKinney2010], the index can be embedded into notebooks and pipelines.
 
